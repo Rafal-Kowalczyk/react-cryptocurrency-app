@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import Coin from './components/Coin/Coin';
-import './App.css';
+import './App.scss';
 
 function App() {
   const API_URL =
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false';
+    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
 
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
@@ -31,8 +31,8 @@ function App() {
 
   return (
     <div className='coin-app'>
-      <div className='coin-search'>
-        <h1 className='coin-text'>Search a currecny</h1>
+      <div className='coin-app__search'>
+        <h1 className='coin-app__text'>Search a currecny</h1>
         <form>
           <input
             type='text'
@@ -49,10 +49,11 @@ function App() {
             name={coin.name}
             image={coin.image}
             symbol={coin.symbol}
+            updated={coin.last_updated}
             price={coin.current_price}
-            volume={coin.total_volume}
+            volume={coin.market_cap}
             priceChange={coin.price_change_percentage_24h}
-            marketcap={coin.market_cap}
+            marketcap={coin.total_volume}
           />
         );
       })}
