@@ -32,11 +32,11 @@ function App() {
   return (
     <div className='coin-app'>
       <div className='coin-app__search'>
-        <h1 className='coin-app__text'>Search a currecny</h1>
+        <h1 className='coin-app__text'>Wyszukaj kryptowalutę</h1>
         <form>
           <input
             type='text'
-            placeholder='Search'
+            placeholder='Szukaj'
             className='coin-input'
             onChange={handleChange}
           />
