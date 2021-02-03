@@ -12,6 +12,9 @@ const Coin = ({
   priceChange,
   marketcap,
 }) => {
+  let jsonData = `${updated}`;
+  const stringData = new Date(jsonData).toLocaleString();
+
   return (
     <div className='coin-container'>
       <div className='wrapper'>
@@ -42,7 +45,9 @@ const Coin = ({
           <p className='coin-data__marketcap'>
             Market Cap: $ {marketcap.toLocaleString()}
           </p>
-          <p className='coin-data__updated'>Ostatnia aktualizacja: {updated}</p>
+          <p className='coin-data__updated'>
+            Ostatnia aktualizacja: {stringData}
+          </p>
         </div>
       </div>
     </div>
