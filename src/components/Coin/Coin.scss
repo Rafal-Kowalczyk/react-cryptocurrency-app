@@ -10,8 +10,8 @@
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #d7d7d7;
+  padding: 30px 0 20px;
+  border-bottom: 1px solid #FCF6BA;
 
   @media (min-width: 575px) {
     flex-direction: row;
@@ -27,15 +27,15 @@
 
     @media (min-width: 575px) {
       justify-content: flex-start;
-      // max-width: 40%;
-      width: 40%;
+      flex-direction: column;
+      width: 30%;
     }
 
     &__img {
       max-width: 100px;
 
       @media (min-width: 575px) {
-        margin: 0 40px 0 20px;
+        margin: 0 auto 20px;
       }
     }
   }
@@ -45,7 +45,7 @@
 
     @media (min-width: 575px) {
       width: 50%;
-     margin-left: 50px;
+      margin-left: 30px;
     }
 
     &__exchange {

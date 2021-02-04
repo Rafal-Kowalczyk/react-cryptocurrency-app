@@ -26,7 +26,7 @@ const Coin = ({
           </div>
         </div>
         <div className='coin-data'>
-          <p className='coin-data__price'>Cena: $ {price}</p>
+          <p className='coin-data__price'>Cena: $ {price.toLocaleString()}</p>
           <p className='coin-data__volume'>
             Volumen: $ {volume.toLocaleString()}
           </p>
