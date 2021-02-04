@@ -1,6 +1,6 @@
 ## react, api, axios
 
-<!-- <a href="https://rafal-kowalczyk.github.io/react-cryptocurrency-app/">Demo</a> -->
+<a href="https://rafal-kowalczyk.github.io/react-cryptocurrency-app/">Demo</a>
 
 # Getting Started with Create React App
 
