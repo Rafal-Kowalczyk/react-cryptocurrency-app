@@ -8,7 +8,7 @@
   color: #fff;
 }
 
-.wrapper {
+body {
   background: rgb(60, 59, 63);
   background: linear-gradient(270deg, rgba(60, 59, 63, 1) 0%, rgba(96, 92, 60, 1) 100%);
 }
@@ -20,8 +20,9 @@
   align-items: center;
   max-width: 970px;
   width: 100%;
+  height: auto;
   margin: 0 auto;
-  margin-top: 60px;
+  padding-top: 60px;
   color: #fff;
   
   &__search {

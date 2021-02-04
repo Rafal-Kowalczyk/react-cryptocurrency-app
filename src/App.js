@@ -30,36 +30,36 @@ function App() {
   );
 
   return (
-    <div className='wrapper'>
-      <div className='coin-app'>
-        <div className='coin-app__search'>
-          <h1 className='coin-app__text'>Wyszukaj kryptowalutę</h1>
-          <form className='coin-form'>
-            <input
-              type='text'
-              placeholder='Szukaj'
-              className='coin-input'
-              onChange={handleChange}
-            />
-          </form>
-        </div>
-        {filteredCoins.map((coin) => {
-          return (
-            <Coin
-              key={coin.id}
-              name={coin.name}
-              image={coin.image}
-              symbol={coin.symbol}
-              updated={coin.last_updated}
-              price={coin.current_price}
-              volume={coin.market_cap}
-              priceChange={coin.price_change_percentage_24h}
-              marketcap={coin.total_volume}
-            />
-          );
-        })}
+    // <div className='wrap'>
+    <div className='coin-app'>
+      <div className='coin-app__search'>
+        <h1 className='coin-app__text'>Wyszukaj kryptowalutę</h1>
+        <form className='coin-form'>
+          <input
+            type='text'
+            placeholder='Szukaj'
+            className='coin-input'
+            onChange={handleChange}
+          />
+        </form>
       </div>
+      {filteredCoins.map((coin) => {
+        return (
+          <Coin
+            key={coin.id}
+            name={coin.name}
+            image={coin.image}
+            symbol={coin.symbol}
+            updated={coin.last_updated}
+            price={coin.current_price}
+            volume={coin.market_cap}
+            priceChange={coin.price_change_percentage_24h}
+            marketcap={coin.total_volume}
+          />
+        );
+      })}
     </div>
+    // </div>
   );
 }
 
