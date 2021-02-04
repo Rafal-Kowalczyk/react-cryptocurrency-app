@@ -34,11 +34,11 @@ const Coin = ({
             <p>Kurs: </p>
             {priceChange < 0 ? (
               <p className='coin-data__percent red'>
-                {priceChange.toFixed(2)}%
+                {priceChange.toFixed(2)}% <span>&#8600;</span>
               </p>
             ) : (
               <p className='coin-data__percent green'>
-                {priceChange.toFixed(2)}%
+                {priceChange.toFixed(2)}% <span>&#8599;</span>
               </p>
             )}
           </span>
